@@ -1,0 +1,20 @@
+echo "enter two number"
+read num1
+read num2
+sum=$((num1 + num2))
+sub=$((num1 - num2))
+pro=$((num1 * num2))
+div=$((num1 / num2))
+echo sum=$sum
+echo sub=$sub
+echo pro=$pro
+echo div=$div
+
+
+output:-enter two number
+12
+6
+sum=18
+sub=6
+pro=72
+div=2
