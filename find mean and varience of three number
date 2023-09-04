@@ -1,0 +1,9 @@
+echo "enter three integers with space between"
+read a b c
+sum=$((a + b + c))
+mean=$((sum / 3))
+varience=$(( ((a - mean) ** 2 + (b - mean) ** 2 + (c - mean) ** 2) / 3 ))
+sd=$(awk "BEGIN {print sqrt($varience)}")
+echo "sum=$sum"
+echo "mean=$mean"
+echo "standard deviation=$sd"
