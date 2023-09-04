@@ -1,0 +1,20 @@
+echo "enter a number"
+read n
+for((i=2;i<=n;i++))
+do
+  flag=0
+
+  for((j=1;j<=i;j++))
+  do
+    if [ $((i%j)) -eq 0 ]
+    then
+      flag=$((flag + 1))
+      fi
+  done
+  done
+if [ $flag -eq 2 ]
+then
+ echo "$n is prime number"
+else
+ echo "$n is not a prime number"
+ fi
